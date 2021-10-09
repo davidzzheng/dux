@@ -1,0 +1,17 @@
+{
+  "name": "warp",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Zheng <hello@davidzheng.me>",
+  "license": "MIT",
+  "workspaces": [
+    "storybook"
+  ],
+  "packageManager": "yarn@3.0.2"
+}

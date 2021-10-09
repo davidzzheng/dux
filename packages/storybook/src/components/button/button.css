@@ -1,0 +1,46 @@
+@tailwind components;
+
+@layer components {
+  .button {
+    @apply font-sans font-semibold text-center text-white rounded-md cursor-pointer;
+
+    &:focus {
+      @apply border-none outline-none;
+    }
+
+    &.green {
+      @apply bg-green-400 hover:bg-green-300 active:bg-green-400 disabled:bg-green-200;
+    }
+
+    &.blue {
+      @apply bg-blue-600;
+    }
+
+    &.purple {
+      @apply bg-purple-500 hover:bg-purple-400 active:bg-purple-500 disabled:bg-purple-300;
+    }
+
+    &.secondary {
+      @apply text-blue-600 bg-white ring ring-blue-600 hover:bg-blue-100;
+    }
+
+    &.small {
+      @apply w-32 py-2 text-base;
+    }
+
+    &.medium {
+      @apply w-48 py-2 text-lg;
+    }
+
+    &.large {
+      @apply w-64 py-3 text-xl;
+    }
+
+    &.loading {
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
+  }
+}
