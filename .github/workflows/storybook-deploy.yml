@@ -20,7 +20,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.x
-      - run: yarn workspaces install
+      - run: yarn workspace tailwind install
+      - run: yarn workspace storybook install
       - run: yarn workspace storybook build-storybook
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
