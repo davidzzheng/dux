@@ -1,7 +1,9 @@
 {
-  "name": "conch",
+  "name": "meerkats",
   "packageManager": "yarn@3.0.2",
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
     "@solana/wallet-adapter-base": "^0.6.0",
     "@solana/wallet-adapter-react": "^0.12.5",
     "@solana/wallet-adapter-wallets": "^0.10.1",
@@ -9,7 +11,9 @@
     "@types/node": "^16.11.0",
     "@types/react": "^17.0.30",
     "autoprefixer": "latest",
+    "borsh": "^0.6.0",
     "buffer-layout": "^1.2.2",
+    "classnames": "^2.3.1",
     "debug": "^4.3.2",
     "next": "^11.1.2",
     "next-compose-plugins": "^2.2.1",

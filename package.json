@@ -11,7 +11,7 @@
   "license": "MIT",
   "workspaces": [
     "storybook",
-    "conch"
+    "packages/conch"
   ],
   "packageManager": "yarn@3.0.2",
   "dependencies": {
