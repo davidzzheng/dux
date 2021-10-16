@@ -1,5 +1,5 @@
 {
-  "name": "meerkats",
+  "name": "shell",
   "packageManager": "yarn@3.0.2",
   "dependencies": {
     "@headlessui/react": "^1.4.1",

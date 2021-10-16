@@ -12104,35 +12104,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"meerkats@workspace:packages/conch":
-  version: 0.0.0-use.local
-  resolution: "meerkats@workspace:packages/conch"
-  dependencies:
-    "@headlessui/react": ^1.4.1
-    "@heroicons/react": ^1.0.4
-    "@solana/wallet-adapter-base": ^0.6.0
-    "@solana/wallet-adapter-react": ^0.12.5
-    "@solana/wallet-adapter-wallets": ^0.10.1
-    "@solana/web3.js": ^1.29.2
-    "@types/node": ^16.11.0
-    "@types/react": ^17.0.30
-    autoprefixer: latest
-    borsh: ^0.6.0
-    buffer-layout: ^1.2.2
-    classnames: ^2.3.1
-    debug: ^4.3.2
-    next: ^11.1.2
-    next-compose-plugins: ^2.2.1
-    next-pwa: ^5.3.2
-    next-transpile-modules: ^8.0.0
-    postcss: latest
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    tailwindcss: latest
-    typescript: ^4.4.4
-  languageName: unknown
-  linkType: soft
-
 "mem@npm:^8.1.1":
   version: 8.1.1
   resolution: "mem@npm:8.1.1"
@@ -16070,6 +16041,35 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"shell@workspace:packages/conch":
+  version: 0.0.0-use.local
+  resolution: "shell@workspace:packages/conch"
+  dependencies:
+    "@headlessui/react": ^1.4.1
+    "@heroicons/react": ^1.0.4
+    "@solana/wallet-adapter-base": ^0.6.0
+    "@solana/wallet-adapter-react": ^0.12.5
+    "@solana/wallet-adapter-wallets": ^0.10.1
+    "@solana/web3.js": ^1.29.2
+    "@types/node": ^16.11.0
+    "@types/react": ^17.0.30
+    autoprefixer: latest
+    borsh: ^0.6.0
+    buffer-layout: ^1.2.2
+    classnames: ^2.3.1
+    debug: ^4.3.2
+    next: ^11.1.2
+    next-compose-plugins: ^2.2.1
+    next-pwa: ^5.3.2
+    next-transpile-modules: ^8.0.0
+    postcss: latest
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    tailwindcss: latest
+    typescript: ^4.4.4
+  languageName: unknown
+  linkType: soft
+
 "side-channel@npm:^1.0.4":
   version: 1.0.4
   resolution: "side-channel@npm:1.0.4"
@@ -16452,6 +16452,40 @@ fsevents@^1.2.7:
   checksum: 76089b72471df9bfb0433a02780620d96228280280c94911bad5556044e86d82fd6665c64e8d095b6043d2bde83e9373bf731e4b378f39303a5463e3ba7963fe
   languageName: node
   linkType: hard
+
+"storybook@workspace:packages/storybook":
+  version: 0.0.0-use.local
+  resolution: "storybook@workspace:packages/storybook"
+  dependencies:
+    "@heroicons/react": ^1.0.4
+    "@solana/web3.js": ^1.29.2
+    "@storybook/addon-a11y": ^6.3.8
+    "@storybook/addon-essentials": ^6.3.8
+    "@storybook/addon-postcss": ^2.0.0
+    "@storybook/builder-webpack5": ^6.3.8
+    "@storybook/manager-webpack5": ^6.3.8
+    "@storybook/react": ^6.3.8
+    "@types/node": ^16.9.6
+    "@types/react": ^17.0.24
+    "@types/react-dom": ^17.0.9
+    classnames: ^2.3.1
+    postcss: ^8.3.6
+    postcss-import: ^14.0.2
+    postcss-preset-env: ^6.7.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    storybook-dark-mode: ^1.0.8
+    stylelint: ^13.13.1
+    stylelint-config-recommended: ^5.0.0
+    stylelint-prettier: ^1.2.0
+    tailwindcss: ^2.2.15
+    typescript: ^4.4.3
+    webpack: ^5.53.0
+  peerDependencies:
+    react: ^17.0.2
+    react-dom: ^17.0.2
+  languageName: unknown
+  linkType: soft
 
 "stream-browserify@npm:3.0.0":
   version: 3.0.0
@@ -16977,40 +17011,6 @@ fsevents@^1.2.7:
   checksum: d61f91d64b9be56ac66edd2a8c0f10fcc59995313f37198cb87de73a6b441a05ad36f4a567bd8736da35bc4a2f8f4049b0e4ff1d4356c0a7c2b91af48b8bf8b2
   languageName: node
   linkType: hard
-
-"tailwind-storybook@workspace:packages/storybook":
-  version: 0.0.0-use.local
-  resolution: "tailwind-storybook@workspace:packages/storybook"
-  dependencies:
-    "@heroicons/react": ^1.0.4
-    "@solana/web3.js": ^1.29.2
-    "@storybook/addon-a11y": ^6.3.8
-    "@storybook/addon-essentials": ^6.3.8
-    "@storybook/addon-postcss": ^2.0.0
-    "@storybook/builder-webpack5": ^6.3.8
-    "@storybook/manager-webpack5": ^6.3.8
-    "@storybook/react": ^6.3.8
-    "@types/node": ^16.9.6
-    "@types/react": ^17.0.24
-    "@types/react-dom": ^17.0.9
-    classnames: ^2.3.1
-    postcss: ^8.3.6
-    postcss-import: ^14.0.2
-    postcss-preset-env: ^6.7.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    storybook-dark-mode: ^1.0.8
-    stylelint: ^13.13.1
-    stylelint-config-recommended: ^5.0.0
-    stylelint-prettier: ^1.2.0
-    tailwindcss: ^2.2.15
-    typescript: ^4.4.3
-    webpack: ^5.53.0
-  peerDependencies:
-    react: ^17.0.2
-    react-dom: ^17.0.2
-  languageName: unknown
-  linkType: soft
 
 "tailwindcss@npm:^2.2.15, tailwindcss@npm:latest":
   version: 2.2.17
