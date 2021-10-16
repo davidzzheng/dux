@@ -1,0 +1,29 @@
+{
+  "name": "conch",
+  "packageManager": "yarn@3.0.2",
+  "dependencies": {
+    "@solana/wallet-adapter-base": "^0.6.0",
+    "@solana/wallet-adapter-react": "^0.12.5",
+    "@solana/wallet-adapter-wallets": "^0.10.1",
+    "@solana/web3.js": "^1.29.2",
+    "@types/node": "^16.11.0",
+    "@types/react": "^17.0.30",
+    "autoprefixer": "latest",
+    "buffer-layout": "^1.2.2",
+    "debug": "^4.3.2",
+    "next": "^11.1.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-pwa": "^5.3.2",
+    "next-transpile-modules": "^8.0.0",
+    "postcss": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "latest",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
