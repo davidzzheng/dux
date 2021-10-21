@@ -5,6 +5,7 @@
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
     "@metaplex/js": "^2.0.1",
+    "@prisma/client": "^3.3.0",
     "@solana/wallet-adapter-base": "^0.6.0",
     "@solana/wallet-adapter-react": "^0.12.5",
     "@solana/wallet-adapter-wallets": "^0.10.1",
@@ -35,5 +36,13 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "prisma": "^3.3.0",
+    "ts-node": "^10.3.0"
   }
 }

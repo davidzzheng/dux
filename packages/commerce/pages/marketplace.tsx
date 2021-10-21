@@ -1,8 +1,15 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
+import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { PublicKey } from "@solana/web3.js";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon, PlusSmIcon } from "@heroicons/react/solid";
 import cn from "classnames";
+
+import SolanaIcon from "../assets/solana.svg";
+import { ConnectButton } from "../components/ConnectButton";
+
+import { TokenAccount, Metadata } from "@metaplex/js";
 
 const breadcrumbs = [{ id: 1, name: "Marketplace", href: "#" }];
 const filters = [
@@ -44,64 +51,65 @@ const filters = [
 ];
 const products = [
   {
-    id: 1,
-    name: "Basic Tee 8-Pack",
-    href: "#",
-    price: "$256",
-    description:
-      "Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.",
-    options: "8 colors",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg",
-    imageAlt:
-      "Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.",
+    name: "Meerkat #2322",
+    price: 256,
   },
   {
-    id: 2,
-    name: "Basic Tee",
-    href: "#",
-    price: "$32",
-    description:
-      "Look like a visionary CEO and wear the same black t-shirt every day.",
-    options: "Black",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg",
-    imageAlt: "Front of plain black t-shirt.",
+    name: "Meerkat #5678",
+    price: 30,
+  },
+  {
+    name: "Meerkat #1234",
+    price: 43,
+  },
+  {
+    name: "Meerkat #9999",
+    price: 1.741,
+  },
+  {
+    name: "Meerkat #0002",
+    price: 30000,
+  },
+  {
+    name: "Meerkat #1337",
+    price: 1337,
   },
   // More products...
 ];
-const footerNavigation = {
-  products: [
-    { name: "Bags", href: "#" },
-    { name: "Tees", href: "#" },
-    { name: "Objects", href: "#" },
-    { name: "Home Goods", href: "#" },
-    { name: "Accessories", href: "#" },
-  ],
-  company: [
-    { name: "Who we are", href: "#" },
-    { name: "Sustainability", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Careers", href: "#" },
-    { name: "Terms & Conditions", href: "#" },
-    { name: "Privacy", href: "#" },
-  ],
-  customerService: [
-    { name: "Contact", href: "#" },
-    { name: "Shipping", href: "#" },
-    { name: "Returns", href: "#" },
-    { name: "Warranty", href: "#" },
-    { name: "Secure Payments", href: "#" },
-    { name: "FAQ", href: "#" },
-    { name: "Find a store", href: "#" },
-  ],
-};
 
 export default function Marketplace() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [appliedFilters, setAppliedFilters] = useState<any>(
     filters.reduce((acc, filter) => ({ ...acc, [filter.id]: [] }), {})
   );
+
+  // const { publicKey } = useWallet();
+  // const { connection } = useConnection();
+
+  // useEffect(() => {
+  //   (async () => {
+  //     if (publicKey) {
+  //       try {
+  //         const a = await connection.getParsedTokenAccountsByOwner(publicKey, {
+  //           programId: new PublicKey(
+  //             "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+  //           ),
+  //         });
+
+  //         const s = await Metadata.findByOwnerV2(connection, publicKey);
+  //         console.log(s);
+
+  //         const b = await Metadata.getPDA(
+  //           "DEbnU6CcH1JgrNRoCq4NqSbxevvKwLrHJ9DefZYF7oy1"
+  //         );
+
+  //         const d = await Metadata.load(connection, b);
+
+  //         // console.log(a, d);
+  //       } catch {}
+  //     }
+  //   })();
+  // }, [publicKey, connection]);
 
   const Filter = () => (
     <form className="space-y-10 divide-y divide-gray-200">
@@ -113,7 +121,7 @@ export default function Marketplace() {
         >
           {({ open }) => (
             <fieldset>
-              <Disclosure.Button className="flex justify-between w-full text-gray-900 row">
+              <Disclosure.Button className="flex justify-between w-full text-gray-900 row hover:text-blue-600 loadable">
                 <legend className="block text-sm font-medium text-left">
                   {section.name}
                 </legend>
@@ -158,7 +166,7 @@ export default function Marketplace() {
   );
 
   return (
-    <div className="bg-gray-100 loader loading">
+    <div className="bg-gray-100 loader">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -243,13 +251,14 @@ export default function Marketplace() {
                 All
               </li>
             </ol>
+            <ConnectButton />
           </nav>
         </div>
 
         <main className="max-w-2xl px-4 mx-auto lg:max-w-7xl lg:px-8">
           {/* <div className="p-12 my-12 bg-white rounded-lg shadow-lg">
-            <h1 className="text-4xl font-black text-gray-900">
-              d<strong className="font-medium">[ux]</strong>
+            <h1 className="text-4xl font-thin text-gray-900">
+              d<strong className="font-medium">[commerce]</strong>
             </h1>
             <p></p>
           </div> */}
@@ -329,34 +338,40 @@ export default function Marketplace() {
               <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
                 {products.map((product) => (
                   <div
-                    key={product.id}
-                    className="relative flex flex-col overflow-hidden bg-white border border-gray-200 rounded-lg"
+                    key={product.name}
+                    className="relative flex flex-col overflow-hidden transition-shadow bg-white border border-gray-200 rounded-lg shadow loading:test hover:shadow-xl"
                   >
-                    <div className="bg-gray-200 aspect-w-3 aspect-h-4 h-96 loadable">
+                    <div className="bg-gray-200 aspect-w-3 aspect-h-4 h-72 loadable">
                       <span className="object-cover object-center w-full h-full sm:w-full sm:h-full" />
                     </div>
-                    <div className="flex flex-col flex-1 p-4 space-y-2">
-                      <h3 className="text-sm font-medium text-gray-900">
+                    <div className="relative flex flex-col flex-1 p-4 space-y-2">
+                      <h3 className="text-lg font-semibold text-gray-900 loadable">
                         {product.name}
                       </h3>
-                      <p className="text-sm text-gray-500">
-                        {product.description}
-                      </p>
-                      <div className="flex flex-col justify-end flex-1">
-                        <p className="text-sm italic text-gray-500">
-                          {product.options}
-                        </p>
-                        <p className="text-base font-medium text-gray-900">
-                          {product.price}
-                        </p>
-                      </div>
                       <div className="flex justify-between">
-                        <button className="px-4 py-2 text-white bg-blue-600 border rounded">
-                          View Details
-                        </button>
-                        <button className="px-4 py-2 text-white bg-green-600 border rounded">
-                          Buy (2 SOL)
-                        </button>
+                        <div className="relative w-24 pt-1 text-sm text-gray-400">
+                          <div className="mb-1 loadable">
+                            Bid{" "}
+                            <strong className="absolute right-0">
+                              <SolanaIcon className="inline w-3 h-3 pb-0.5" />{" "}
+                              40
+                            </strong>
+                          </div>
+                          <div className="loadable">
+                            Last{" "}
+                            <strong className="absolute right-0">
+                              <SolanaIcon className="inline w-3 h-3 pb-0.5" />{" "}
+                              50000
+                            </strong>
+                          </div>
+                        </div>
+                        <div className="absolute bottom-4 right-4">
+                          <button className="text-base font-bold text-blue-500 min-w-28 hover:text-blue-900 loadable">
+                            Buy (
+                            <SolanaIcon className="inline w-4 h-4 pb-0.5" />{" "}
+                            {product.price})
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
