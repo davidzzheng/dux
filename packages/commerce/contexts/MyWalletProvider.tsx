@@ -8,7 +8,7 @@ import {
   getSolletWallet,
 } from "@solana/wallet-adapter-wallets";
 
-function MyWalletProvider(props) {
+function MyWalletProvider(props: { children: any; [key: string]: any }) {
   const wallets = useMemo(
     () => [getPhantomWallet(), getSolflareWallet(), getSolletWallet()],
     []
