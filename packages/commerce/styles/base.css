@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+}
+
+@layer utilities {
+  .loader.loading .loadable {
+    @apply w-full text-gray-300 text-opacity-0 bg-gray-300 cursor-default animate-pulse;
+  }
+}
