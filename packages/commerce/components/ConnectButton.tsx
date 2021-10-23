@@ -34,7 +34,7 @@ export const ConnectButton = () => {
 
   useEffect(() => {
     select(selected.name);
-  }, [selected]);
+  }, [select, selected]);
 
   return (
     <Listbox value={selected} onChange={setSelected}>

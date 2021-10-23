@@ -19,12 +19,15 @@ const withTM = require("next-transpile-modules")([
   "@solana/wallet-adapter-wallets",
 ]);
 
-module.exports = withPlugins([
-  withPWA({
-    pwa: {
-      dest: "public",
-      register: true,
-    },
-  }),
-  withTM(),
-]);
+module.exports = withPlugins(
+  [
+    withPWA({
+      pwa: {
+        dest: "public",
+        register: true,
+      },
+    }),
+    withTM(),
+  ],
+  { images: { domains: ["www.arweave.net"] } }
+);

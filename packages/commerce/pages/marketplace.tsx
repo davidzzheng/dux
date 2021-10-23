@@ -1,15 +1,12 @@
 import { Fragment, useEffect, useState } from "react";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { PublicKey } from "@solana/web3.js";
+import useSWR from "swr";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon, PlusSmIcon } from "@heroicons/react/solid";
 import cn from "classnames";
 
-import SolanaIcon from "../assets/solana.svg";
-import { ConnectButton } from "../components/ConnectButton";
-
-import { TokenAccount, Metadata } from "@metaplex/js";
+import ArtCard from "../components/ArtCard";
+import { Token } from "../types/Token";
 
 const breadcrumbs = [{ id: 1, name: "Marketplace", href: "#" }];
 const filters = [
@@ -49,67 +46,17 @@ const filters = [
     ],
   },
 ];
-const products = [
-  {
-    name: "Meerkat #2322",
-    price: 256,
-  },
-  {
-    name: "Meerkat #5678",
-    price: 30,
-  },
-  {
-    name: "Meerkat #1234",
-    price: 43,
-  },
-  {
-    name: "Meerkat #9999",
-    price: 1.741,
-  },
-  {
-    name: "Meerkat #0002",
-    price: 30000,
-  },
-  {
-    name: "Meerkat #1337",
-    price: 1337,
-  },
-  // More products...
-];
 
-export default function Marketplace() {
+export const Marketplace: React.FC = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [appliedFilters, setAppliedFilters] = useState<any>(
     filters.reduce((acc, filter) => ({ ...acc, [filter.id]: [] }), {})
   );
 
-  // const { publicKey } = useWallet();
-  // const { connection } = useConnection();
-
-  // useEffect(() => {
-  //   (async () => {
-  //     if (publicKey) {
-  //       try {
-  //         const a = await connection.getParsedTokenAccountsByOwner(publicKey, {
-  //           programId: new PublicKey(
-  //             "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
-  //           ),
-  //         });
-
-  //         const s = await Metadata.findByOwnerV2(connection, publicKey);
-  //         console.log(s);
-
-  //         const b = await Metadata.getPDA(
-  //           "DEbnU6CcH1JgrNRoCq4NqSbxevvKwLrHJ9DefZYF7oy1"
-  //         );
-
-  //         const d = await Metadata.load(connection, b);
-
-  //         // console.log(a, d);
-  //       } catch {}
-  //     }
-  //   })();
-  // }, [publicKey, connection]);
+  const { data: items = new Array(9).fill({}) } = useSWR<Token[]>(
+    "/api/marketplace",
+    (url) => fetch(url).then((r) => r.json())
+  );
 
   const Filter = () => (
     <form className="space-y-10 divide-y divide-gray-200">
@@ -166,7 +113,7 @@ export default function Marketplace() {
   );
 
   return (
-    <div className="bg-gray-100 loader">
+    <div className="bg-gray-100">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -251,7 +198,6 @@ export default function Marketplace() {
                 All
               </li>
             </ol>
-            <ConnectButton />
           </nav>
         </div>
 
@@ -273,7 +219,7 @@ export default function Marketplace() {
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-400 loadable">
                     Floor Price
                   </dt>
-                  <dd className="order-1 h-12 text-5xl font-semibold text-indigo-600 loadable">
+                  <dd className="order-1 h-12 text-5xl font-semibold text-blue-600 loadable">
                     50
                   </dd>
                 </div>
@@ -281,7 +227,7 @@ export default function Marketplace() {
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-400 loadable">
                     Weekly Volume
                   </dt>
-                  <dd className="order-1 text-5xl font-semibold text-indigo-600 loadable">
+                  <dd className="order-1 text-5xl font-semibold text-blue-600 loadable">
                     5K
                   </dd>
                 </div>
@@ -289,7 +235,7 @@ export default function Marketplace() {
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-400 loadable">
                     Total Volume
                   </dt>
-                  <dd className="order-1 text-5xl font-semibold text-indigo-600 loadable">
+                  <dd className="order-1 text-5xl font-semibold text-blue-600 loadable">
                     27K
                   </dd>
                 </div>
@@ -297,7 +243,7 @@ export default function Marketplace() {
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-400 loadable">
                     Owners
                   </dt>
-                  <dd className="order-1 text-5xl font-semibold text-indigo-600 loadable">
+                  <dd className="order-1 text-5xl font-semibold text-blue-600 loadable">
                     400
                   </dd>
                 </div>
@@ -336,45 +282,8 @@ export default function Marketplace() {
               </h2>
 
               <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
-                {products.map((product) => (
-                  <div
-                    key={product.name}
-                    className="relative flex flex-col overflow-hidden transition-shadow bg-white border border-gray-200 rounded-lg shadow loading:test hover:shadow-xl"
-                  >
-                    <div className="bg-gray-200 aspect-w-3 aspect-h-4 h-72 loadable">
-                      <span className="object-cover object-center w-full h-full sm:w-full sm:h-full" />
-                    </div>
-                    <div className="relative flex flex-col flex-1 p-4 space-y-2">
-                      <h3 className="text-lg font-semibold text-gray-900 loadable">
-                        {product.name}
-                      </h3>
-                      <div className="flex justify-between">
-                        <div className="relative w-24 pt-1 text-sm text-gray-400">
-                          <div className="mb-1 loadable">
-                            Bid{" "}
-                            <strong className="absolute right-0">
-                              <SolanaIcon className="inline w-3 h-3 pb-0.5" />{" "}
-                              40
-                            </strong>
-                          </div>
-                          <div className="loadable">
-                            Last{" "}
-                            <strong className="absolute right-0">
-                              <SolanaIcon className="inline w-3 h-3 pb-0.5" />{" "}
-                              50000
-                            </strong>
-                          </div>
-                        </div>
-                        <div className="absolute bottom-4 right-4">
-                          <button className="text-base font-bold text-blue-500 min-w-28 hover:text-blue-900 loadable">
-                            Buy (
-                            <SolanaIcon className="inline w-4 h-4 pb-0.5" />{" "}
-                            {product.price})
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {items.map((token, i) => (
+                  <ArtCard {...token} isLoading key={token.contentName ?? i} />
                 ))}
               </div>
             </section>
@@ -383,4 +292,6 @@ export default function Marketplace() {
       </div>
     </div>
   );
-}
+};
+
+export default Marketplace;
