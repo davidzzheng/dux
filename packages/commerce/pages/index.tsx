@@ -72,7 +72,7 @@ export const Marketplace: React.FC = () => {
                 leaveTo="-translate-y-1/4 opacity-0"
                 className="pt-6 space-y-3"
               >
-                {filters[filter].map((option, i) => (
+                {(filters[filter] as string[]).map((option, i) => (
                   <div key={option} className="flex items-center">
                     <input
                       id={`${filter}-${i}`}
