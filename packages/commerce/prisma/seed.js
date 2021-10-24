@@ -8,8 +8,8 @@ const prisma = new PrismaClient();
 
 (async () => {
   const connection = new Connection(
-    // "https://connect.runnode.com/?" + process.env.RUNNODE_KEY
-    "https://api.mainnet-beta.solana.com"
+    "https://connect.runnode.com/?" + process.env.NEXT_PUBLIC_RUNNODE_KEY
+    // "https://api.mainnet-beta.solana.com"
   );
   const {
     metadata: { Metadata },

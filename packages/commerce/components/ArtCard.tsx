@@ -1,39 +1,16 @@
 import { useEffect, useState } from "react";
-import { programs } from "@metaplex/js";
 import Image from "next/image";
 import Link from "next/link";
 import cn from "classnames";
 import SolanaIcon from "../assets/solana.svg";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { Token } from "../types/Token";
 
-export interface ArtCardProps extends Partial<Token> {
+export interface ArtCardProps extends Token {
   isLoading: boolean;
 }
 
-const {
-  vault: { Vault },
-  auction: { Auction },
-  metadata: { Metadata },
-  metaplex: { Store, AuctionManager },
-} = programs;
-
 export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
-  const { connection } = useConnection();
   const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   (async () => {
-  //     if (data) {
-  //       try {
-  //         // Auction.load()
-  //         // console.log(await Auction.load(connection, data.mint));
-  //       } catch (e) {}
-
-  //       // const storeData = await Auction.load(connection, pk);
-  //     }
-  //   })();
-  // }, [connection, data]);
 
   return (
     <div
@@ -63,11 +40,11 @@ export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
                 (attr) =>
                   attr.value && (
                     <div
-                      className="flex "
+                      className="flex"
                       key={`${content?.name}-${attr.trait_type}`}
                     >
                       <div className="self-center flex-1 inline text-xs font-light">
-                        {attr.trait_type}:{" "}
+                        {`${attr.trait_type}: `}
                       </div>
                       <div className="text-base font-medium">{attr.value}</div>
                     </div>
@@ -81,7 +58,7 @@ export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
         <Link href={`/token/${pubkey}`} passHref>
           <a
             className={cn(
-              "text-lg font-bold hover:text-blue-900 text-blue-500 loadable h-7",
+              "text-lg font-bold hover:text-blue-900 text-blue-500 loadable h-7 block transition-colors",
               { loading: loading }
             )}
           >
@@ -103,7 +80,7 @@ export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
               </strong>
             </div>
           </div>
-          <button className="text-base font-bold text-blue-500 min-w-28 hover:text-blue-900 loadable">
+          <button className="text-base font-bold text-blue-500 transition-colors min-w-28 hover:text-blue-900 loadable">
             Buy (
             <SolanaIcon className="inline w-4 h-4 pb-0.5" /> 200)
           </button>
