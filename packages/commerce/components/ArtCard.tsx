@@ -8,6 +8,7 @@ import { IToken } from "../types/Token";
 
 export interface ArtCardProps extends IToken {
   isLoading: boolean;
+  contentName: string;
 }
 
 export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
