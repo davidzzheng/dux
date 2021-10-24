@@ -33,7 +33,6 @@
   },
   "scripts": {
     "dev": "next",
-    "prebuild": "prisma generate",
     "build": "next build",
     "start": "next start"
   },

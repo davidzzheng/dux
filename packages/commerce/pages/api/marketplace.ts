@@ -1,20 +1,27 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client";
 
-import { Token } from "../../types/Token";
-
-interface MarketplaceResponse {}
+import { IToken } from "../../types";
 
 const prisma = new PrismaClient();
 export default async function handle(
   req: NextApiRequest,
-  res: NextApiResponse<Token[]>
+  res: NextApiResponse<IToken[]>
 ) {
+  req.query;
   const data = await prisma.token.findMany({
     take: 12,
-    include: { content: { include: { attributes: true } } },
+    // where: {
+    //   content: {
+    //     attributes: { some: { value: { in: req.body. }, AND: { } } },
+    //   },
+    // },
+    include: {
+      content: {
+        include: { attributes: true },
+      },
+    },
   });
-  // const attrs = await prisma.attribute.aggregate({ where: {} });
 
   res.json(data);
 }

@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100;
+  @apply bg-gray-100 dark:bg-black;
 }
 
 @layer utilities {
   .loading .loadable,
   .loading.loadable {
-    @apply text-gray-300 text-opacity-0 bg-gray-300 cursor-default animate-pulse;
+    @apply text-gray-300 text-opacity-0 bg-gray-300 cursor-default dark:bg-gray-600 dark:text-gray-600 animate-pulse;
   }
 }
