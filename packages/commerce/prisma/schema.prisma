@@ -9,9 +9,9 @@ datasource db {
 
 model Token {
   metadata    Json
-  content     Content @relation(fields: [contentName], references: [name])
-  pubkey      String  @unique @id
+  pubkey      String  @id @unique
   contentName String
+  content     Content @relation(fields: [contentName], references: [name])
 }
 
 model Content {
@@ -22,18 +22,9 @@ model Content {
   image                   String
   animation_url           String?
   external_url            String
-  update_authority        String
-  attributes              Attribute[]
   collection              Json
   properties              Json
+  update_authority        String
+  attributes              Json[]
   Token                   Token[]
-}
-
-model Attribute {
-  trait_type  String
-  value       String
-  contentName String
-  content     Content @relation(fields: [contentName], references: [name])
-
-  @@id([contentName, trait_type, value])
 }

@@ -5,20 +5,10 @@ import { XIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon, PlusSmIcon } from "@heroicons/react/solid";
 import cn from "classnames";
 
-import { useConnection } from "@solana/wallet-adapter-react";
-import { programs } from "@metaplex/js";
-
 import ArtCard from "../components/ArtCard";
 import { IToken } from "../types/Token";
 
 const breadcrumbs = [{ id: 1, name: "Marketplace", href: "#" }];
-
-const {
-  vault: { Vault },
-  auction: { Auction, AuctionData },
-  metadata: { Metadata },
-  metaplex: { Store, AuctionManager },
-} = programs;
 
 export const Marketplace: React.FC = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -27,20 +17,6 @@ export const Marketplace: React.FC = () => {
     useSWR<IToken[]>("/api/marketplace");
 
   const { data: filters = {} } = useSWR("/api/filters");
-
-  console.log(filters);
-
-  const { connection } = useConnection();
-
-  // useEffect(() => {
-  //   (async () => {
-  //     try {
-  //       console.log(await AuctionManager.findMany(connection));
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //   })();
-  // }, []);
 
   const Filter = () => (
     <form className="space-y-10 divide-y divide-gray-200 dark:divide-gray-800">

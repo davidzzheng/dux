@@ -2,15 +2,30 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import cn from "classnames";
-import SolanaIcon from "../assets/solana.svg";
-import LoaderIcon from "../assets/loader.svg";
+import SolanaIcon from "../assets/Solana";
+import LoaderIcon from "../assets/Loader";
 import { IToken } from "../types/Token";
+import { useConnection } from "@solana/wallet-adapter-react";
+import { programs } from "@metaplex/js";
+import useSWR from "swr";
+
+const {
+  vault: { Vault },
+  auction: { Auction, AuctionExtended },
+  metadata: { Metadata },
+  metaplex: { Store, AuctionManager },
+} = programs;
 
 export interface ArtCardProps extends IToken {
   isLoading: boolean;
 }
 
-export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
+export const ArtCard = ({
+  content,
+  contentName,
+  pubkey,
+  metadata,
+}: ArtCardProps) => {
   const [fetching, setFetching] = useState(true);
   const [buying, setBuying] = useState(false);
   const [owned, setOwned] = useState(false);
@@ -23,6 +38,17 @@ export const ArtCard = ({ content, contentName, pubkey }: ArtCardProps) => {
       setOwned(true);
     }, 2000);
   };
+
+  const { connection } = useConnection();
+
+  useEffect(() => {
+    (async () => {
+      try {
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  }, []);
 
   return (
     <div
