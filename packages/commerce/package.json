@@ -5,7 +5,7 @@
     "@apollo/client": "^3.4.16",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
-    "@metaplex/js": "^3.0.0",
+    "@metaplex/js": "^4.2.0",
     "@prisma/client": "^3.3.0",
     "@project-serum/anchor": "^0.18.0",
     "@solana/wallet-adapter-base": "^0.6.0",
@@ -17,6 +17,7 @@
     "axios": "^0.23.0",
     "classnames": "^2.3.1",
     "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
     "graphql": "^15.7.1",
     "next": "latest",
     "next-compose-plugins": "^2.2.1",
@@ -36,9 +37,9 @@
   },
   "scripts": {
     "postinstall": "prisma generate",
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

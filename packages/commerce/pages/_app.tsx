@@ -12,8 +12,7 @@ const WalletProvider = dynamic(() => import("../contexts/MyWalletProvider"), {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const ep = useMemo(
-    () =>
-      `${process.env.NEXT_PUBLIC_RPC_NODE}${process.env.NEXT_PUBLIC_RPC_NODE_KEY}`,
+    () => `${process.env.NEXT_PUBLIC_RPC_NODE}`,
     // "https://api.mainnet-beta.solana.com",
     []
   );

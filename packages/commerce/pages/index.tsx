@@ -7,6 +7,8 @@ import cn from "classnames";
 
 import ArtCard from "../components/ArtCard";
 import { IToken } from "../types/Token";
+import { useConnection } from "@solana/wallet-adapter-react";
+import { PublicKey } from "@solana/web3.js";
 
 const breadcrumbs = [{ id: 1, name: "Marketplace", href: "#" }];
 
@@ -18,6 +20,19 @@ export const Marketplace: React.FC = () => {
 
   const { data: filters = {} } = useSWR("/api/filters");
 
+  const { connection } = useConnection();
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const pk = new PublicKey("pEsKYABNARLiDFYrjbjHDieD5h6gHrvYf9Vru62NX9k");
+
+        connection.onLogs(pk, (acc) => console.log(acc));
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  }, []);
   const Filter = () => (
     <form className="space-y-10 divide-y divide-gray-200 dark:divide-gray-800">
       {Object.keys(filters).map((filter, i) => (

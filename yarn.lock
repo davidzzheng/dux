@@ -2143,13 +2143,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metaplex/js@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@metaplex/js@npm:3.0.0"
+"@metaplex/js@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@metaplex/js@npm:4.2.0"
   dependencies:
     "@solana/spl-token": ^0.1.8
-    "@solana/web3.js": ^1.24.1
+    "@solana/web3.js": ^1.30.2
     "@types/bs58": ^4.0.1
+    async-retry: ^1.3.3
     axios: ^0.21.4
     bn.js: ^5.2.0
     borsh: ^0.4.0
@@ -2157,7 +2158,7 @@ __metadata:
     buffer: ^6.0.3
     crypto-hash: ^1.3.0
     form-data: ^4.0.0
-  checksum: b541325a34d84f811b7962cacc14ccfa6c778773a19cdc334385b132635705d1a74eea5442d01e37370f5afe6d58eae3c64b2b514a3b0a230029d9554f71c16a
+  checksum: 1c9e1ed1a9bfab25ed916e9d5c5f4d0dd0d29504084f6f18234a0609ed3736b04b836997e8b86278ed2faacab52225f2f0082c8f6d6f66e2275a89caf0cb3ac5
   languageName: node
   linkType: hard
 
@@ -2812,7 +2813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solana/web3.js@npm:^1.17.0":
+"@solana/web3.js@npm:^1.17.0, @solana/web3.js@npm:^1.30.2":
   version: 1.30.2
   resolution: "@solana/web3.js@npm:1.30.2"
   dependencies:
@@ -2834,7 +2835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solana/web3.js@npm:^1.21.0, @solana/web3.js@npm:^1.22.0, @solana/web3.js@npm:^1.24.1, @solana/web3.js@npm:^1.29.2":
+"@solana/web3.js@npm:^1.21.0, @solana/web3.js@npm:^1.22.0, @solana/web3.js@npm:^1.29.2":
   version: 1.29.2
   resolution: "@solana/web3.js@npm:1.29.2"
   dependencies:
@@ -5859,6 +5860,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"async-retry@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "async-retry@npm:1.3.3"
+  dependencies:
+    retry: 0.13.1
+  checksum: 38a7152ff7265a9321ea214b9c69e8224ab1febbdec98efbbde6e562f17ff68405569b796b1c5271f354aef8783665d29953f051f68c1fc45306e61aec82fdc4
+  languageName: node
+  linkType: hard
+
 "asynckit@npm:^0.4.0":
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
@@ -7325,7 +7335,7 @@ __metadata:
     "@apollo/client": ^3.4.16
     "@headlessui/react": ^1.4.1
     "@heroicons/react": ^1.0.4
-    "@metaplex/js": ^3.0.0
+    "@metaplex/js": ^4.2.0
     "@prisma/client": ^3.3.0
     "@project-serum/anchor": ^0.18.0
     "@solana/wallet-adapter-base": ^0.6.0
@@ -7340,6 +7350,7 @@ __metadata:
     babel-plugin-inline-react-svg: ^2.0.1
     classnames: ^2.3.1
     debug: ^4.3.2
+    dotenv: ^10.0.0
     eslint-config-next: ^11.1.3-canary.41
     graphql: ^15.7.1
     next: latest
@@ -8595,7 +8606,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:10.0.0":
+"dotenv@npm:10.0.0, dotenv@npm:^10.0.0":
   version: 10.0.0
   resolution: "dotenv@npm:10.0.0"
   checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
@@ -16876,6 +16887,13 @@ resolve@^2.0.0-next.3:
   version: 0.1.15
   resolution: "ret@npm:0.1.15"
   checksum: d76a9159eb8c946586567bd934358dfc08a36367b3257f7a3d7255fdd7b56597235af23c6afa0d7f0254159e8051f93c918809962ebd6df24ca2a83dbe4d4151
+  languageName: node
+  linkType: hard
+
+"retry@npm:0.13.1":
+  version: 0.13.1
+  resolution: "retry@npm:0.13.1"
+  checksum: 47c4d5be674f7c13eee4cfe927345023972197dbbdfba5d3af7e461d13b44de1bfd663bfc80d2f601f8ef3fc8164c16dd99655a221921954a65d044a2fc1233b
   languageName: node
   linkType: hard
 
