@@ -16,14 +16,7 @@ import { localPoint } from "@visx/event";
 import { LinearGradient } from "@visx/gradient";
 import { max, extent, bisector } from "d3-array";
 import { timeFormat } from "d3-time-format";
-
-// import {
-//   XYChart,
-//   AnimatedAxis,
-//   AnimatedGrid,
-//   AnimatedAreaSeries,
-//   Tooltip,
-// } from "@visx/xychart";
+import { abbreviateNumber } from "js-abbreviation-number";
 
 import data from "../utils/data.json";
 
@@ -34,7 +27,7 @@ const getMarketCap = (d: IData) => d.market_cap;
 const bisectDate = bisector<IData, Date>((d) => new Date(d.snapped_at)).left;
 
 export const background = "#000";
-export const accentColor = "#000";
+export const accentColor = "#444";
 export const accentColorDark = "#333";
 const tooltipStyles = {
   ...defaultStyles,
@@ -59,7 +52,7 @@ interface IData {
 export const MarketChart = ({
   width,
   height,
-  margin = { top: 40, right: 30, bottom: 50, left: 40 },
+  margin = { top: 40, right: 100, bottom: 30, left: 100 },
 }: AreaProps) => {
   const { showTooltip, hideTooltip, tooltipTop, tooltipLeft, tooltipData } =
     useTooltip<IData>({
@@ -141,10 +134,19 @@ export const MarketChart = ({
             fill="url(#area-background-gradient)"
             rx={14}
           />
-          <Group left={margin.left} top={margin.top}>
-            <AxisLeft scale={tokenPriceScale} />
-            <AxisBottom scale={dateScale} top={innerHeight} />
-            <AxisRight scale={mcapScale} />
+          <Group>
+            <AxisLeft
+              scale={tokenPriceScale}
+              left={margin.left}
+              label="Price"
+            />
+            <AxisBottom scale={dateScale} top={innerHeight + margin.top} />
+            <AxisRight
+              scale={mcapScale}
+              left={innerWidth + margin.left}
+              label="Market Cap"
+              tickFormat={(v) => abbreviateNumber(+v, 0)}
+            />
 
             <LinearGradient
               id="area-gradient"
@@ -288,38 +290,6 @@ export const MarketChart = ({
           </div>
         )}
       </div>
-      {/* <XYChart
-        height={500}
-        xScale={{ type: "time" }}
-        yScale={{ type: "linear" }}
-      >
-        <AnimatedAxis orientation="bottom" numTicks={4} />
-        <AnimatedAxis key="price" orientation="left" numTicks={4} />
-        <AnimatedGrid columns={false} numTicks={2} />
-        <AnimatedAreaSeries
-          dataKey="price"
-          data={data}
-          xAccessor={(x) => new Date(x.snapped_at)}
-          yAccessor={(y) => y.price}
-        />
-        <AnimatedAreaSeries
-          dataKey="mcap"
-          data={data}
-          xAccessor={(x) => new Date(x.snapped_at)}
-          yAccessor={(y) => y.market_cap}
-          opacity="40%"
-        />
-
-        <Tooltip<IData>
-          snapTooltipToDatumX
-          snapTooltipToDatumY
-          showVerticalCrosshair
-          showSeriesGlyphs
-          renderTooltip={({ tooltipData, colorScale }) => (
-            <div>{tooltipData.nearestDatum.datum.price}</div>
-          )}
-        />
-      </XYChart> */}
     </>
   );
 };
