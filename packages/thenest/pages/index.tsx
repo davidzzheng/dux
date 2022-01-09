@@ -8,6 +8,7 @@ import ParentSize from "@visx/responsive/lib/components/ParentSize";
 import { ConnectButton } from "../components/ConnectButton";
 import { IDashboard } from "./api/dashboard";
 import { MarketChart } from "../components/MarketChart";
+import { batchTransactions, calculateTxChange } from "../utils/transaction";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -20,14 +21,43 @@ export const Home = () => {
   const { publicKey, connected } = useWallet();
   const { connection } = useConnection();
   const [account, setAccount] = useState<ParsedAccountData>();
+  const [transactions, setTransactions] = useState<any[]>([]);
   useEffect(() => {
-    if (connected) {
-      connection
-        .getParsedTokenAccountsByOwner(publicKey, {
-          mint: new PublicKey("sinjBMHhAuvywW3o87uXHswuRXb3c7TfqgAdocedtDj"),
-        })
-        .then((s) => setAccount(s.value[0].account.data));
-    }
+    (async () => {
+      if (connected) {
+        // TODO: switch to `connection.getTokenAccountBalance`
+        const wsInAcc = await connection.getParsedTokenAccountsByOwner(
+          publicKey,
+          {
+            mint: new PublicKey("sinjBMHhAuvywW3o87uXHswuRXb3c7TfqgAdocedtDj"),
+          }
+        );
+        setAccount(wsInAcc.value[0].account.data);
+
+        const inAcc = await connection.getParsedTokenAccountsByOwner(
+          publicKey,
+          { mint: new PublicKey("inL8PMVd6iiW3RCBJnr5AsrRN6nqr4BTrcNuQWQSkvY") }
+        );
+
+        const txSigs = await connection.getSignaturesForAddress(
+          inAcc.value[0].pubkey
+        );
+
+        const txs = (
+          await Promise.all(
+            batchTransactions(txSigs).map((txBatch) =>
+              connection.getParsedConfirmedTransactions(
+                txBatch.map((tx) => tx.signature)
+              )
+            )
+          )
+        ).flat();
+        const txChanges = txs.map((tx) => calculateTxChange(tx));
+
+        setTransactions(txChanges);
+        console.log(txChanges);
+      }
+    })();
   }, [connected, connection, publicKey]);
 
   const {
@@ -46,6 +76,9 @@ export const Home = () => {
   const inBalance =
     account?.parsed.info.tokenAmount.uiAmount * +dashboard?.index;
 
+  const approxDailyIncome =
+    dollarBalance * ((+dashboard?.apy / 100) ** (1 / 365) - 1);
+
   return (
     <>
       <div className="min-h-full">
@@ -54,7 +87,7 @@ export const Home = () => {
             <div className="border-b border-gray-700">
               <div className="flex items-center justify-between h-16 px-4 sm:px-0">
                 <div className="flex items-center">
-                  <div className="text-white text-5xl">◎</div>
+                  <div className="text-white text-5xl">(◎,◎)</div>
                   {/* Mobile menu button */}
                   <div className="ml-10 flex items-baseline space-x-4">
                     {/* {navigation.map((item) => (
@@ -145,11 +178,9 @@ export const Home = () => {
                 </div>
               </dl>
             </div>
-            <div className="w-full h-96">
+            <div className="w-full h-[420px] bg-white rounded-lg shadow">
               <ParentSize>
-                {({ height, width }) => (
-                  <MarketChart width={width} height={height} />
-                )}
+                {({ width }) => <MarketChart width={width} height={500} />}
               </ParentSize>
             </div>
 
@@ -194,10 +225,7 @@ export const Home = () => {
                       {account ? (
                         <>
                           <span className="text-gray-500 text-2xl">$ </span>{" "}
-                          {(
-                            dollarBalance * (+dashboard.apy) ** (1 / 365) -
-                            dollarBalance
-                          ).toLocaleString()}
+                          {approxDailyIncome.toLocaleString()}
                         </>
                       ) : (
                         <div className="loadable loading w-full h-9" />
@@ -207,6 +235,10 @@ export const Home = () => {
                 </dl>
               </div>
             )}
+
+            {/* {transactions.map((tx) => (
+              <div>{JSON.stringify(tx)}</div>
+            ))} */}
           </div>
         </main>
       </div>

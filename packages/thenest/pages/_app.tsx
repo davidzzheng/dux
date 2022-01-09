@@ -11,7 +11,7 @@ const WalletProvider = dynamic(() => import("../contexts/MyWalletProvider"), {
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const ep = useMemo(() => "https://api.mainnet-beta.solana.com", []);
+  const ep = useMemo(() => "https://ssc-dao.genesysgo.net", []);
   return (
     <SWRConfig
       value={{
