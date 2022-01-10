@@ -68,7 +68,7 @@ export const MarketChart = ({
   height,
   margin = { top: 40, right: 100, bottom: 30, left: 100 },
   data = inData,
-  transactions,
+  transactions = [],
 }: AreaProps) => {
   const { showTooltip, hideTooltip, tooltipTop, tooltipLeft, tooltipData } =
     useTooltip<IData>({

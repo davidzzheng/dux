@@ -4618,6 +4618,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/d3-scale-chromatic@npm:^3":
+  version: 3.0.0
+  resolution: "@types/d3-scale-chromatic@npm:3.0.0"
+  checksum: e06afffd2725570aa90cb3050eb96a94727264948d9256e56807ab582aba379168d84d1d98bcaa275bf38375148b35dfe13697e06fc7565dd17ac7e2acb11980
+  languageName: node
+  linkType: hard
+
 "@types/d3-scale@npm:^3.3.0":
   version: 3.3.2
   resolution: "@types/d3-scale@npm:3.3.2"
@@ -9049,6 +9056,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d3-color@npm:1 - 3":
+  version: 3.0.1
+  resolution: "d3-color@npm:3.0.1"
+  checksum: 5096af3bd342d0cfad4719c1860915d0a2fd2f9078b1f0d960ab16e541eb71886d8f3b5e3df0e298d5c139aff43516295543304c65acf8cb4850e71c93f4df0c
+  languageName: node
+  linkType: hard
+
 "d3-dispatch@npm:^1.0.3":
   version: 1.0.6
   resolution: "d3-dispatch@npm:1.0.6"
@@ -9083,6 +9097,15 @@ __metadata:
   version: 2.2.1
   resolution: "d3-interpolate-path@npm:2.2.1"
   checksum: 2b3c2267cea4813d4e79d8399c17ebc1023a0b41f72caa5a20ba5e12161702f9a0873b4fdc3b87d9882feb7486cb018bb426233f7de865b018eac0c3ac20932f
+  languageName: node
+  linkType: hard
+
+"d3-interpolate@npm:1 - 3":
+  version: 3.0.1
+  resolution: "d3-interpolate@npm:3.0.1"
+  dependencies:
+    d3-color: 1 - 3
+  checksum: a42ba314e295e95e5365eff0f604834e67e4a3b3c7102458781c477bd67e9b24b6bb9d8e41ff5521050a3f2c7c0c4bbbb6e187fd586daa3980943095b267e78b
   languageName: node
   linkType: hard
 
@@ -9122,6 +9145,16 @@ __metadata:
   version: 2.2.2
   resolution: "d3-random@npm:2.2.2"
   checksum: 79931d642f059c874c2be964b629ac0ce0f73306fa744e2ac8eb5ef1592ecfe8ab4a31a5273bef75db7ba2055c344af9921ef1bf55070edd826d7a7ba0b47331
+  languageName: node
+  linkType: hard
+
+"d3-scale-chromatic@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "d3-scale-chromatic@npm:3.0.0"
+  dependencies:
+    d3-color: 1 - 3
+    d3-interpolate: 1 - 3
+  checksum: a8ce4cb0267a17b28ebbb929f5e3071d985908a9c13b6fcaa2a198e1e018f275804d691c5794b970df0049725b7944f32297b31603d235af6414004f0c7f82c0
   languageName: node
   linkType: hard
 
@@ -11122,6 +11155,13 @@ __metadata:
   dependencies:
     to-regex-range: ^5.0.1
   checksum: cc283f4e65b504259e64fd969bcf4def4eb08d85565e906b7d36516e87819db52029a76b6363d0f02d0d532f0033c9603b9e2d943d56ee3b0d4f7ad3328ff917
+  languageName: node
+  linkType: hard
+
+"filter-obj@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "filter-obj@npm:1.1.0"
+  checksum: cf2104a7c45ff48e7f505b78a3991c8f7f30f28bd8106ef582721f321f1c6277f7751aacd5d83026cb079d9d5091082f588d14a72e7c5d720ece79118fa61e10
   languageName: node
   linkType: hard
 
@@ -17383,6 +17423,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"query-string@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "query-string@npm:7.1.0"
+  dependencies:
+    decode-uri-component: ^0.2.0
+    filter-obj: ^1.1.0
+    split-on-first: ^1.0.0
+    strict-uri-encode: ^2.0.0
+  checksum: 4594a0a092772eb6854310feea85e34f8dcf70df494776a45b9e5be53621ffbcf930ae669974e4e171ce5e0f29a837e9821d48db843106dd94ee390f6f5ac857
+  languageName: node
+  linkType: hard
+
 "querystring-es3@npm:0.2.1, querystring-es3@npm:^0.2.0":
   version: 0.2.1
   resolution: "querystring-es3@npm:0.2.1"
@@ -17789,6 +17841,16 @@ fsevents@^1.2.7:
     react: ">=16.13"
     react-dom: ">=16.13"
   checksum: b8e8939229d463c3c505f7b617925c0228efae0cd6f651371f463846417b06c9170be57df51293a61027c41770f8a090fdb8a08717c4e36290ccb496e0318f1f
+  languageName: node
+  linkType: hard
+
+"react-use-websocket@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "react-use-websocket@npm:2.9.1"
+  peerDependencies:
+    react: ">= 16.8.0"
+    react-dom: ">= 16.8.0"
+  checksum: 2de16d81f8d278aeaf3900688c85aeaa7c5ec483424de66021082b884fa952f43dfec31ed72a6285e469f74f6085893e18ab0428aa6c4f409e4644011b755a64
   languageName: node
   linkType: hard
 
@@ -19168,6 +19230,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"split-on-first@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "split-on-first@npm:1.1.0"
+  checksum: 16ff85b54ddcf17f9147210a4022529b343edbcbea4ce977c8f30e38408b8d6e0f25f92cd35b86a524d4797f455e29ab89eb8db787f3c10708e0b47ebf528d30
+  languageName: node
+  linkType: hard
+
 "split-string@npm:^3.0.1, split-string@npm:^3.0.2":
   version: 3.1.0
   resolution: "split-string@npm:3.1.0"
@@ -19390,6 +19459,13 @@ resolve@^2.0.0-next.3:
   version: 1.0.1
   resolution: "stream-shift@npm:1.0.1"
   checksum: 59b82b44b29ec3699b5519a49b3cedcc6db58c72fb40c04e005525dfdcab1c75c4e0c180b923c380f204bed78211b9bad8faecc7b93dece4d004c3f6ec75737b
+  languageName: node
+  linkType: hard
+
+"strict-uri-encode@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "strict-uri-encode@npm:2.0.0"
+  checksum: eaac4cf978b6fbd480f1092cab8b233c9b949bcabfc9b598dd79a758f7243c28765ef7639c876fa72940dac687181b35486ea01ff7df3e65ce3848c64822c581
   languageName: node
   linkType: hard
 
@@ -20198,6 +20274,7 @@ resolve@^2.0.0-next.3:
     "@solana/wallet-adapter-react": ^0.12.5
     "@solana/wallet-adapter-wallets": ^0.10.1
     "@solana/web3.js": ^1.29.2
+    "@types/d3-scale-chromatic": ^3
     "@types/eslint": ^8
     "@types/react": ^17
     "@types/react-dom": ^17
@@ -20205,6 +20282,7 @@ resolve@^2.0.0-next.3:
     autoprefixer: latest
     axios: ^0.23.0
     classnames: ^2.3.1
+    d3-scale-chromatic: ^3.0.0
     dotenv: ^10.0.0
     eslint: 8.5.0
     eslint-config-next: 12.0.7
@@ -20215,15 +20293,18 @@ resolve@^2.0.0-next.3:
     next-transpile-modules: ^8.0.0
     postcss: latest
     postcss-preset-env: ^6.7.0
+    query-string: ^7.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-spring: ^9.3.3
+    react-use-websocket: ^2.9.1
     sharp: ^0.29.2
     stylelint: ^13.13.1
     stylelint-config-recommended: ^5.0.0
     stylelint-prettier: ^1.2.0
     tailwindcss: latest
     typescript: ^4.4.4
+    zustand: ^3.6.8
   languageName: unknown
   linkType: soft
 
@@ -21947,6 +22028,18 @@ resolve@^2.0.0-next.3:
   version: 0.8.15
   resolution: "zen-observable@npm:0.8.15"
   checksum: b7289084bc1fc74a559b7259faa23d3214b14b538a8843d2b001a35e27147833f4107590b1b44bf5bc7f6dfe6f488660d3a3725f268e09b3925b3476153b7821
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^3.6.8":
+  version: 3.6.8
+  resolution: "zustand@npm:3.6.8"
+  peerDependencies:
+    react: ">=16.8"
+  peerDependenciesMeta:
+    react:
+      optional: true
+  checksum: f3ae4b1212390f0e58143a901b3ca1293c9f06b4b4550a80a5f250b09726907ab4b93b1651bf75cb8b7b03148b1878b0654493c0c5ff5df998271c6b1f65cea0
   languageName: node
   linkType: hard
 

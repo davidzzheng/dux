@@ -19,6 +19,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IDashboard>
 ) {
-  const dashboard = await fetch("https://api.invictusdao.fi/api/dashboard");
-  res.status(200).json(await dashboard.json());
+  const response = await fetch("https://api.invictusdao.fi/api/dashboard");
+  res.status(200).json(await response.json());
 }

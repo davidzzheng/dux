@@ -5,6 +5,7 @@ import { SWRConfig } from "swr";
 
 import "../styles/base.css";
 import { useMemo } from "react";
+import { AppShell } from "../components/AppShell";
 
 const WalletProvider = dynamic(() => import("../contexts/MyWalletProvider"), {
   ssr: false,
@@ -21,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <ConnectionProvider endpoint={ep}>
         <WalletProvider>
-          <Component {...pageProps} />
+          <AppShell>
+            <Component {...pageProps} />
+          </AppShell>
         </WalletProvider>
       </ConnectionProvider>
     </SWRConfig>
