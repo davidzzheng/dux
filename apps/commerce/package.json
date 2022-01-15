@@ -1,5 +1,6 @@
 {
   "name": "commerce",
+  "version": "1.0.0",
   "dependencies": {
     "@apollo/client": "^3.4.16",
     "@headlessui/react": "^1.4.1",
@@ -32,6 +33,7 @@
     "stylelint-prettier": "^1.2.0",
     "swr": "^1.0.1",
     "tailwindcss": "latest",
+    "tailwind": "1.0.0",
     "typescript": "^4.4.4"
   },
   "scripts": {

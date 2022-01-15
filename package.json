@@ -7,6 +7,7 @@
     "packages/*",
     "apps/*"
   ],
+  "private": true,
   "scripts": {
     "build": "turbo run build",
     "commit": "cz",
@@ -22,15 +23,20 @@
     }
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "commitizen": "^4.2.4",
     "cz-emoji": "^1.3.1",
     "eslint": "^7.32.0",
     "module-alias": "^2.2.2",
+    "postcss": "^8.4.5",
     "prettier": "^2.4.1",
-    "turbo": "^1.0.28"
+    "tailwindcss": "^3.0.15",
+    "turbo": "^1.0.28",
+    "typescript": "^4.5.4"
   },
   "turbo": {
     "baseBranch": "origin/main",
+    "npmClient": "yarn",
     "pipeline": {
       "build": {
         "dependsOn": [
@@ -52,6 +58,13 @@
       "dev": {
         "cache": false
       }
-    }
+    },
+    "globalDependencies": [
+      ".env",
+      "tsconfig.json",
+      "stylelint.config.js",
+      "postcss.config.js",
+      "tailwind.config.js"
+    ]
   }
 }
