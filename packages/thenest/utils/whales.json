@@ -1,0 +1,705 @@
+{
+  "data": [
+    {
+      "address": "9xrF4ihPpBBVbVTLmjSE7Y5oXaQMC9q63ffqDV31QWcX",
+      "amount": 11007813032216,
+      "decimals": 9,
+      "owner": "HJKnvNbsiYrAMtFnTZnjb2Eh1ctPgTbjodkVm9KBi7CM",
+      "rank": 1
+    },
+    {
+      "address": "ETkfi2ywQ2p4cdGxHyQyRV7NvQUbxM2Qgtr1stB3Zfmi",
+      "amount": 5950572229549,
+      "decimals": 9,
+      "owner": "Du76kfES7TZrwqUKFgfCmEjHsnV42UwASsJ3QrmLnvHe",
+      "rank": 2
+    },
+    {
+      "address": "6qPpxXXSica5m7tiWfX4VXu93RK4xZdJsQvqWNYpj4ha",
+      "amount": 3500000043980,
+      "decimals": 9,
+      "owner": "Gsgcfwowjw83WiiLVMRybMdoD4r3AEDdtjv2yuyNDboE",
+      "rank": 3
+    },
+    {
+      "address": "Dx72b9zzxwNhG4Q8K3MZxFcEFQni1eUA6KLRLhE92f5C",
+      "amount": 2463447277699,
+      "decimals": 9,
+      "owner": "3xX5v7RP8vv4NoCr7JWmAV6tbJ521WFFp9xgF65nFgZh",
+      "rank": 4
+    },
+    {
+      "address": "3N1wzgA6K6skmwjvZxCHdNkNmSufAThR9L8FFrkeqHkj",
+      "amount": 2127143145934,
+      "decimals": 9,
+      "owner": "5XgStSeDe22PVKojnuHaoboNGiJxgeszhLHsQYAgEBvs",
+      "rank": 5
+    },
+    {
+      "address": "DREp4sXQiepL8DeeFn5x4rpYwoEeDouRp7NSL2X5KEiQ",
+      "amount": 1761957301182,
+      "decimals": 9,
+      "owner": "3aQuNZhkBARdDdZXioHaKrY2gbsPAnU3K4hjA4wYjnZH",
+      "rank": 6
+    },
+    {
+      "address": "H9WTjYQEN3zuXU6W77KfqBx2266Pxuyyfo2wKWqQNsrS",
+      "amount": 1523465353729,
+      "decimals": 9,
+      "owner": "8igPEbrowqUoqPAnaAjryxSzJypLh8vRRQ5BRLXBUB5P",
+      "rank": 7
+    },
+    {
+      "address": "FrrKkw4FChg6bYRwBqKwUH676aVF1G2dog3bRHn9EUkm",
+      "amount": 1277860553386,
+      "decimals": 9,
+      "owner": "Fu8vsnaTtfbmqg6butkTTRdqUtipcAwPDrVFhDpENbB3",
+      "rank": 8
+    },
+    {
+      "address": "Pb4rdgjXKZigHMEPS1s2t2EK7P7azzy38LRmmPNMjaC",
+      "amount": 1116666384210,
+      "decimals": 9,
+      "owner": "BxMy3eDtjs7CqqR5CpMwgLkdo69x4514GCAghwFeJhv6",
+      "rank": 9
+    },
+    {
+      "address": "93T9e9TdLmC1Kazwu6Uot1jd2jUvXP75aDzjnuzTUM5z",
+      "amount": 1107033686548,
+      "decimals": 9,
+      "owner": "HnYyeQEo4H5jJeXbRS3AcDVsNsH48uf7JibTumuanU6o",
+      "rank": 10
+    },
+    {
+      "address": "B3LEVG8ruiPZpfuFZtwwXagjLerK1TngZ38wYPrQcPdq",
+      "amount": 1018287107701,
+      "decimals": 9,
+      "owner": "7vMhBtc2cKpzACyVjmqRu7QDLR8KBLDWAGtC836aa66e",
+      "rank": 11
+    },
+    {
+      "address": "SbfuurYhtJihBs3NWXRSEtrGrbKtfo4hWGSvH9pgkoi",
+      "amount": 1001317494043,
+      "decimals": 9,
+      "owner": "FXmXC3mFJKyD7XRmub4RzTEKE3awUTVsEft8jSEDgA3o",
+      "rank": 12
+    },
+    {
+      "address": "7LCZvu3zH4peMTPCAsVHY6DsxL1t6VQPSHQw7TxU5jg5",
+      "amount": 864366628849,
+      "decimals": 9,
+      "owner": "8PxiuHUFHAYKpMzciUKJ4ajPM5fnRrdCsuowciEQsbHL",
+      "rank": 13
+    },
+    {
+      "address": "HWH6jL51od7WG9DP1ufboxbJhgF5aA47F8rt6XeySUUz",
+      "amount": 835539730942,
+      "decimals": 9,
+      "owner": "7rcRay8doYCs29gaDZU83NVJyqmeifvE5MGRrUsZQ4aW",
+      "rank": 14
+    },
+    {
+      "address": "21Q5CD4xcytGYtZ4FpDMmbFKtCV2hw42ZKA2qJcgjfiz",
+      "amount": 785159661483,
+      "decimals": 9,
+      "owner": "5RjpwzY4tLVvTQbET9rW7d2fyZoPfxqnufL2JRTj58Rk",
+      "rank": 15
+    },
+    {
+      "address": "3dgcHSS4YqX97jQYeRtiXyoq5dGquhbyrk2YZYYZLzLr",
+      "amount": 748728337744,
+      "decimals": 9,
+      "owner": "4xdi3VDrPKjyp4jsiFNmPyeeTrSz9Bx9nY9YduLzUrFa",
+      "rank": 16
+    },
+    {
+      "address": "C4z2yKoS5U95qptZF35Eqqatopouk3EZnAZYSbfuQbbT",
+      "amount": 730525788990,
+      "decimals": 9,
+      "owner": "8Kag8CqNdCX55s4A5W4iraS71h6mv6uTHqsJbexdrrZm",
+      "rank": 17
+    },
+    {
+      "address": "C1YDY94pMCnRCAaff7QBtZFEdSyPpn58tBSk1dmicV6v",
+      "amount": 709257308664,
+      "decimals": 9,
+      "owner": "VPmiBdquBsvEDS4U18aP4Bns7JE8KzEhkA8mMZcNBbW",
+      "rank": 18
+    },
+    {
+      "address": "8YNuSoAecF4YmWgqS1UTq5sRoG8T8kb8ofWobdnUMzdF",
+      "amount": 708708413099,
+      "decimals": 9,
+      "owner": "3kFs5dFab9ef6Q3AFTsARq5iALYrsVZBrA7hQo513Jr1",
+      "rank": 19
+    },
+    {
+      "address": "BS9vJgSoYkCrgMvuvgaPdGD8FoyEQvQqE8bY2c63A5S4",
+      "amount": 703806660322,
+      "decimals": 9,
+      "owner": "CPuM1o9kX1CthQWqWWtRYwcuEwbZuLR8aiZE26dyh4A4",
+      "rank": 20
+    },
+    {
+      "address": "gop8Y1NMPbSFmTeBa9vVHzeypcPtEHAoY5jUFipjFoM",
+      "amount": 682482101723,
+      "decimals": 9,
+      "owner": "GmRC6EhKtBEcKM1bjCBzamWDy3qmP5z2Kc9tYjQuc2Pn",
+      "rank": 21
+    },
+    {
+      "address": "DSv1ivgb85cTouq65B1acWGZK33zyz2p8bYUrRajaQzq",
+      "amount": 679269346124,
+      "decimals": 9,
+      "owner": "Bo4fiffPXxJRksSZzK8KgohzmdCxg5zUyG6eapyMiNpt",
+      "rank": 22
+    },
+    {
+      "address": "7ZdyutWvKDcETrWZ1eWd85qv9kbAZn22fpkBuZcSbof6",
+      "amount": 669096301898,
+      "decimals": 9,
+      "owner": "65Kprq4JjtdX4jKM41gfqGXVz4Ait5hGBSKxUvU4kryT",
+      "rank": 23
+    },
+    {
+      "address": "5dLZ9o2iKFjccYPyq4wpb1YE91GMEtjPvBBMqNEgjYTz",
+      "amount": 649520113710,
+      "decimals": 9,
+      "owner": "BJufbShr8zg1vGqsLR3Y54GA9wUQWjCYew7GLmWwRBEz",
+      "rank": 24
+    },
+    {
+      "address": "ACwkYrM13homZZQiZWzy7mNnX5Zuoaz9Dzyky9fQqHZQ",
+      "amount": 606192680901,
+      "decimals": 9,
+      "owner": "7PYicffn8NDeKDUFYMF3hGFRtY86f9JAVX7kwvjpsmB3",
+      "rank": 25
+    },
+    {
+      "address": "3qv7tCQari14kmThE8RrxJyH23HaGXu5LTKzmn6bxZ1x",
+      "amount": 594394352202,
+      "decimals": 9,
+      "owner": "6XoCGsKeLiL46vgsSYg8JWSbvwiqqNZW8juQBMYApNUJ",
+      "rank": 26
+    },
+    {
+      "address": "2S8FowREV8mYzWZEm2ZuaqqkBLsGda1hcV8z4ZvCFR4h",
+      "amount": 593692418404,
+      "decimals": 9,
+      "owner": "5HFYmuvG6FMxkWsQzRDiRRFSZBAHe33mk7M7Lzg4KQj1",
+      "rank": 27
+    },
+    {
+      "address": "Ck6aAGBipCKn5ryBTc7DYNqgRvH2gNgMEfzHs4iMb3Mz",
+      "amount": 593455765907,
+      "decimals": 9,
+      "owner": "CFka8s1ovjCRxEWyw4QtUHcUWRoupz7LbYTLj7AYM5ib",
+      "rank": 28
+    },
+    {
+      "address": "DrStc7CwrttDCQxwnzpBprztUxb3HuXr3oQFuU9gzE7f",
+      "amount": 583245570602,
+      "decimals": 9,
+      "owner": "BwJifz8FKeCDjQJAYK1ms6Kcg6Btuqdk358TPm428mJd",
+      "rank": 29
+    },
+    {
+      "address": "3wWhzFS2q3oPfshGQYszqbh1Tctbxh6mR4tVSumx1XYY",
+      "amount": 581534587125,
+      "decimals": 9,
+      "owner": "GzEtmSvfupLcMDHc216SNEMeEcUTwKp8S5rrwQfpQFsr",
+      "rank": 30
+    },
+    {
+      "address": "HsMYeR6iDWZcs9HsWgXyQxSp6UTpqmCksCAQpeFULQLL",
+      "amount": 574199048897,
+      "decimals": 9,
+      "owner": "AYzx1cvmS4m6zAU8QDy2xbBwJEQ4q571SK9FgJabxJ8v",
+      "rank": 31
+    },
+    {
+      "address": "8N9ewqcnxf3nqud3nqkFqcxfgCE5UVVz1w95djFyvRGt",
+      "amount": 564922485931,
+      "decimals": 9,
+      "owner": "GB9Cy7vdbYPvAPKPZDEPfmWegDw4eFMaJxcG2VXfK4pf",
+      "rank": 32
+    },
+    {
+      "address": "HBVftffyt9o8FQvvF5vQbBAsHSimh6uDLRypbSWfBeWd",
+      "amount": 564469413867,
+      "decimals": 9,
+      "owner": "4sdFobMqSvVq5ysp2WEzj294TWMH5fDeohhh2DhSDFQQ",
+      "rank": 33
+    },
+    {
+      "address": "94EU7kZtZaHSNpesqWCZhU1XZs2yFNLU6MNmYX5Gv6KM",
+      "amount": 557293298200,
+      "decimals": 9,
+      "owner": "51yt5DcR999NCyj8JjBzMcqHVSGgSjMis87KTZAgPvq",
+      "rank": 34
+    },
+    {
+      "address": "6a6WMRNxKTvy7GYy4BQ15DM7NCFTzYVqiQzBD4C7ihY",
+      "amount": 555656450027,
+      "decimals": 9,
+      "owner": "8r7ijtRdYhFmhMnJg499Yi92WHzpgJNN2tGik8g2Yfon",
+      "rank": 35
+    },
+    {
+      "address": "3yG5cVRep9cGEShizWpoJq6tYdMqVJFTcGZ627gNSgRV",
+      "amount": 549210410921,
+      "decimals": 9,
+      "owner": "2qEkxEjGnuNVZwxzHjUYbWmQs3uiMQFiATy2SASPFCdJ",
+      "rank": 36
+    },
+    {
+      "address": "3t7ALtcPWHbRTjZsnudYVAhKWCicxdhsBfyq6mrwvnHt",
+      "amount": 535792058425,
+      "decimals": 9,
+      "owner": "CKnsugBrLUhb1ZiD4uRZeCW5awKc7dqP16gD3bPqxowH",
+      "rank": 37
+    },
+    {
+      "address": "96fpmv6zr4oDMY2kDga6vBxWKcdqaGUMzveSrgmfvXMa",
+      "amount": 527051580851,
+      "decimals": 9,
+      "owner": "3DCsYKBfcbnpBemtfbrpdwgZhgFSDsKiqJLM19VefMVb",
+      "rank": 38
+    },
+    {
+      "address": "7W6Kxwx5an9hbmThuBdthTtzHEUdETwxCJspR3wwJUaT",
+      "amount": 516071320259,
+      "decimals": 9,
+      "owner": "f7f1F2dPHN6VotBdX1whF1Fg1hH2SnDxFupnb5zkxcu",
+      "rank": 39
+    },
+    {
+      "address": "BqNjVMcib8qEtAqPcSnL369VQpH1QPzFd6KqnWuKww9z",
+      "amount": 511843156236,
+      "decimals": 9,
+      "owner": "CQiUFewe9haNuV98Vcpv3dnnrhNcjpHFESQzbfLiYPv",
+      "rank": 40
+    },
+    {
+      "address": "729fPD835o9iv1s5it75psnDzjFnpxWitUb57cvHpPpG",
+      "amount": 509882818140,
+      "decimals": 9,
+      "owner": "25jVujwUizRAxCR9qjuNHXqejRuebLZmJVCe9zZSfM8K",
+      "rank": 41
+    },
+    {
+      "address": "DY2rxvixz18DDRWBAFD6hMEWiRsq25TBsZLHuGrHsV3Z",
+      "amount": 491253086783,
+      "decimals": 9,
+      "owner": "FXKp4WXxP53vQyNzsAwqMSPizJm62TbXUquDa7gdr67D",
+      "rank": 42
+    },
+    {
+      "address": "4Sas4P7NZ6gnfznYTvzKHtRqgiw9zMp2SP6kZNaDcVJN",
+      "amount": 489693806173,
+      "decimals": 9,
+      "owner": "8qnxGvF6ReLgVqrwZdCuF3SDbk7CMEqkDr4XGDuGsWvk",
+      "rank": 43
+    },
+    {
+      "address": "2oyDYnBM6TCipTSYNTdTHARBoguLMYWdNQp79vr9voAV",
+      "amount": 489484880968,
+      "decimals": 9,
+      "owner": "5iiTUYxzJuV6t8BmY2XfNtjaCJh1YA89BS1NwBdA1taM",
+      "rank": 44
+    },
+    {
+      "address": "8YGR2HvEZXyxtbSA7WBWxgVEG81kj9vZpS4mCNoS319M",
+      "amount": 489188088300,
+      "decimals": 9,
+      "owner": "3SWqfnWGt4LHHVi2o7S7fsmvKqENZXdFKtXEUJhape9y",
+      "rank": 45
+    },
+    {
+      "address": "DGNWDb8FbFih6mDTrBnmbm9EJL7L6Wzpk9uLwmRLaiNJ",
+      "amount": 487323657911,
+      "decimals": 9,
+      "owner": "CC2EvoDTzwuLW4v5nJJgQErh8LTVNFzDdAUwDCZByoC1",
+      "rank": 46
+    },
+    {
+      "address": "6DhFFc7SsmS37Gqc9HouYzLiGzKS2jokkEAFAJ2wGnbA",
+      "amount": 484375228656,
+      "decimals": 9,
+      "owner": "6U32d8CpixLL5LdJGP62RgP3qrRqgWQPBwJ3Ezd4ESX6",
+      "rank": 47
+    },
+    {
+      "address": "2usoVqj6eM3sfw2yHd15hEfYewftjKUNcChX2K4m4YPJ",
+      "amount": 483317637735,
+      "decimals": 9,
+      "owner": "6zKbKrNKq3KEWuFRxC9n3PG2kriiEwG9bC3hvH3nVgQ8",
+      "rank": 48
+    },
+    {
+      "address": "CfUU5iyf56tVJ7Q1A7yGxJXALPE9kB8PvnRb67nKiTbA",
+      "amount": 475905325390,
+      "decimals": 9,
+      "owner": "3rJKjvySxVnJxvAYuZoX1reCmagfm8dtxoGHVQEA9BFp",
+      "rank": 49
+    },
+    {
+      "address": "AJesG2DZZfbH7zoX7UZX5xPo6gaShzpAt5pT9jPZ3vEA",
+      "amount": 472745606619,
+      "decimals": 9,
+      "owner": "aAShETsTarCphDEUCEuCLeKHzmE26eWA9WRUWNxRgDy",
+      "rank": 50
+    },
+    {
+      "address": "QzwJy9LecLUANXsGeNon3iHx2LgtHzMnRf1YHSPrjQa",
+      "amount": 472411489417,
+      "decimals": 9,
+      "owner": "AJyv1Bz2zRPbXhEAnLitLcw6N2x4eAMnHZxc3osVN2FF",
+      "rank": 51
+    },
+    {
+      "address": "H7dQnmZmcgZWMXpVnw8HwBpLAigg4N72b7YxPxGeJqgs",
+      "amount": 465859173053,
+      "decimals": 9,
+      "owner": "D9QyhfzbU3MQXbBbCxCaAoJGp8tVUw6vzBRV3iQKghPS",
+      "rank": 52
+    },
+    {
+      "address": "G76nHbbvML25WANTdVyHN2M4kHfEoMWdGweoy4snYUF3",
+      "amount": 456723487964,
+      "decimals": 9,
+      "owner": "81GV2H9ipJSZD6YpJGj2XQNfoUroWWnKfwMHGSwvhixd",
+      "rank": 53
+    },
+    {
+      "address": "JVw8UR4PATo93LHtvsyR29mLPNbYrzfV59LH43jrEUt",
+      "amount": 452694356280,
+      "decimals": 9,
+      "owner": "8neHkPeSdGwf4e3UZVEq65wbmuJ2yS5e77SXYSg5JwpA",
+      "rank": 54
+    },
+    {
+      "address": "DSxt6vua58sxi5ZsHkhJVSyreJjt5a19jV8oD4jaDfiv",
+      "amount": 444055225921,
+      "decimals": 9,
+      "owner": "3ySSKiTqCFCc5iArSeuhXwAsC1oR5FgwZpGTVGNPXQPt",
+      "rank": 55
+    },
+    {
+      "address": "XYDSppX7qAXVdfKFdqn9w7PdX26UAkjrrpiJ8NwPXMq",
+      "amount": 442194750257,
+      "decimals": 9,
+      "owner": "HkYATSrLbvcw4YvNdvcLQWNx46kqZRvu3571XEeHPeYs",
+      "rank": 56
+    },
+    {
+      "address": "35FiUJfV4md21MNKUCgeRd4oyeJAtGHQxdQAFr5hH3YL",
+      "amount": 428974771235,
+      "decimals": 9,
+      "owner": "FrrrZWDn7pCMiGoh35PVZbP8uV2n5nFFJx3uFuyKty2R",
+      "rank": 57
+    },
+    {
+      "address": "83wb1mH1cfzCUrY3qNoQhGLXXtMkYwMNAcyRrjq3GMiy",
+      "amount": 428603993524,
+      "decimals": 9,
+      "owner": "DmZWFAsZDNxzPz3eMHJBFNZVTKd396dXuX82yenAzTCe",
+      "rank": 58
+    },
+    {
+      "address": "n7wE4woqnJoWcnxnajW1bshzvDqPGcqLNwMKw8Wxujo",
+      "amount": 426184478772,
+      "decimals": 9,
+      "owner": "HpG3Vh9Qh6PeUVfiSvHJ6fryECbTd4MsSePfJpEXFvWz",
+      "rank": 59
+    },
+    {
+      "address": "Ah192QcSyXT5xNtQF6f4ZScqnhcVrcE7LCCH2Vsq5awY",
+      "amount": 425772556604,
+      "decimals": 9,
+      "owner": "A7kAgPCxVgPRDPv39qhLo6BbcRYVB74a68odLSg5c9Q8",
+      "rank": 60
+    },
+    {
+      "address": "GJfDx8MAg5bXEvZQpxjfq5ZXwERvp1NSi41x852bKzY5",
+      "amount": 418664166731,
+      "decimals": 9,
+      "owner": "Buj3SwLpHw6NS8XCZ4y1247mkZAirD4zfdRJVpTE6b5p",
+      "rank": 61
+    },
+    {
+      "address": "62RKibwhgqM5cDg5TNfFkDv1XQuUj58nu7ySVjPfRB6g",
+      "amount": 410625717595,
+      "decimals": 9,
+      "owner": "CGVp8Hyxt1MRE4JVRgiN6wuqPTCpKomtXVe1NHWgBKHt",
+      "rank": 62
+    },
+    {
+      "address": "5LPvC1VhzbhL4vZhgMj1PaAHAWWMo69EQb8wp8MCeM3X",
+      "amount": 406349346689,
+      "decimals": 9,
+      "owner": "BGCtcqTU5Ftm8F9VTiVNWMCiycvMnnZxHzmw8GWBuLyv",
+      "rank": 63
+    },
+    {
+      "address": "AccTPs3jjWAEH1unWbKP8bJvApb46G4HsCPqPqiFsuiY",
+      "amount": 401445302311,
+      "decimals": 9,
+      "owner": "CcfX1Pu9ckhgBqJabNUPPdBq8eAihji8EgSDaSAdWrwK",
+      "rank": 64
+    },
+    {
+      "address": "B1yfDF4zWrPdP7nyqCJQZyTLVZ2W2SB3yqk4uFbYwQBs",
+      "amount": 401130213364,
+      "decimals": 9,
+      "owner": "H65y3hUiRweZCDGdb22No8PduPUy1eXuZ3XyDrXV8WXG",
+      "rank": 65
+    },
+    {
+      "address": "5bjnoM2cGqV38UkeZXa1JjFfw2F6MDbN2ak9Ztz5fqEn",
+      "amount": 392759882955,
+      "decimals": 9,
+      "owner": "9gU3YLVborXHqV2cVWjG2YxTSVD3KsiASVtR4b1hKJGV",
+      "rank": 66
+    },
+    {
+      "address": "2DL1F7BhwxcB1KEipAaRuWn8ZgbvTTShGmPgSsWyVA73",
+      "amount": 381526971605,
+      "decimals": 9,
+      "owner": "EtducGnLSftGewA6pn4g48rBfdAU4XAoxZrTgpdY7GzR",
+      "rank": 67
+    },
+    {
+      "address": "9XF97nsVUuP9rjTeM7VNmpCqQZnpovCyHB355W3tj6HV",
+      "amount": 375468600696,
+      "decimals": 9,
+      "owner": "7R12unjmcESYPdCcMsQTQc5SL5cswZmJFreksUdyyzy1",
+      "rank": 68
+    },
+    {
+      "address": "CzXekhUS5x9j2wouUVhHNq36RAn8m8swS6mQmo7kRa9F",
+      "amount": 367307731286,
+      "decimals": 9,
+      "owner": "4shh3cJh28DHQAkjtuD9vsdi3i9U7ehfun9R5uypSsUy",
+      "rank": 69
+    },
+    {
+      "address": "9BXCjz6od21V8rMV8mThLxz1MH12uVyGzyerRMv261Jd",
+      "amount": 367217357334,
+      "decimals": 9,
+      "owner": "3TeswEr9LmLK1vbh1wpaMoz8oGTPhkZeCxCjT19YHGvC",
+      "rank": 70
+    },
+    {
+      "address": "DRe9R73RkcLnkpJ8E3vgvtAESRxo3uRZ3SAhrkuDhUFZ",
+      "amount": 365089034371,
+      "decimals": 9,
+      "owner": "4bZMc1MQhJF4sGZAT1MmcG6ZFADbemFAWdhT6iEn8Utp",
+      "rank": 71
+    },
+    {
+      "address": "2asyrnFmVNfvM8N1ujnKLdgNmaLv3856MFBrYNHBT59x",
+      "amount": 357848883163,
+      "decimals": 9,
+      "owner": "BMDVgyaQSqvX8AJbzbg111oPysPHKWQASqkjSq859aRt",
+      "rank": 72
+    },
+    {
+      "address": "3x9bj2vo2uEFuq8RwnbtDG5HhkQg4hX6wu943xBJPSQL",
+      "amount": 356142443986,
+      "decimals": 9,
+      "owner": "49QoV4219nhc1UmppMQXMLkBbv7XSAFH9ChuHd1HPcRC",
+      "rank": 73
+    },
+    {
+      "address": "3tFfoiJnttGoZxFfxAjmscjz3Bk9N6oARLto3a6rzpBz",
+      "amount": 351208052650,
+      "decimals": 9,
+      "owner": "9332oAnLyffprnFHopGGnHVKzMcRnCKMo3m4TUCrHnoy",
+      "rank": 74
+    },
+    {
+      "address": "9WxBbhZEd2RoYTsZtePBwne3nepjk8oxUbdmRsp6yJBL",
+      "amount": 346990277437,
+      "decimals": 9,
+      "owner": "GURzUPLm33v9XMJ25U8JMoZju26F6eT1E6YSVmUoGxkE",
+      "rank": 75
+    },
+    {
+      "address": "HEeqoRp1UEQBVZ2i4CoTwKGTS5GwAtq1i1tY2EK2eGCu",
+      "amount": 343348290801,
+      "decimals": 9,
+      "owner": "Fbfvxw1q2BogAp5bGUy9PbkTK5vMXH5y1CCpUpvGLQU1",
+      "rank": 76
+    },
+    {
+      "address": "7XU3Xag2JP4rnd2v8toYfDdyWwp76erjQsKdzmQ997tF",
+      "amount": 336901621111,
+      "decimals": 9,
+      "owner": "6SPPy3nucGGzJSiouKfbfDnTQ2Nf1Q3Q2vbpgJPMWkQU",
+      "rank": 77
+    },
+    {
+      "address": "349BAEsUJnRsgaSQZuthCxfGEz6nYavW8zRB9vze6iBZ",
+      "amount": 332089812605,
+      "decimals": 9,
+      "owner": "9X1bymZYE2NjgbHD1p3aKzbGXLojW7bb6KsxvKZE2zFJ",
+      "rank": 78
+    },
+    {
+      "address": "FZQEaAKSEqeTDPAS7mdVhyFH1PsgXQwLBSsMRMRrcBEh",
+      "amount": 331637575237,
+      "decimals": 9,
+      "owner": "D3uaUgsr3eaxRdzevNzgxeUtVVpYKAJLUD3TLnwBdAVX",
+      "rank": 79
+    },
+    {
+      "address": "GyxTFEntE8pcRg5nkijrGknh1b7s4E65X8GxnCaMt3Wk",
+      "amount": 327996685640,
+      "decimals": 9,
+      "owner": "C3y2YPsDBzVLdeDengMNWmCUT6DM2U2FH9JTEEQdNSe8",
+      "rank": 80
+    },
+    {
+      "address": "DDCM8tQ6FPWvCdcgvYvg81GnPvy7PTGEj2KXWdfkENh",
+      "amount": 323447188585,
+      "decimals": 9,
+      "owner": "2CfnX6xg8f4Gzsk8MZbPYAeQshGLv1TshjqU1YtoBTYg",
+      "rank": 81
+    },
+    {
+      "address": "5uFwYNP1Jhi8vAXApaMqKHtgQEQMYDr9faUU3sPommyk",
+      "amount": 307142982629,
+      "decimals": 9,
+      "owner": "Ervn2GECbpUbaA75kGURZFeYXxPf92xkpUX6YGx6jQgg",
+      "rank": 82
+    },
+    {
+      "address": "JBNDGgJxDMFZ5BM1rb1vWQh516M1DqJf4PmY9dwZsebh",
+      "amount": 302724517410,
+      "decimals": 9,
+      "owner": "49zYZ5x5oSydrjvkdmuthh9BFa6ot4M9jem7UFjSWEea",
+      "rank": 83
+    },
+    {
+      "address": "GXVYcP6PJ9Y1DtaNxq8H4xwf8tpqSNXcn129cMdv3GPy",
+      "amount": 301196218569,
+      "decimals": 9,
+      "owner": "FcJGkWVLshqzAFkdNjyoSSCZ3rGenhKrLmp1YGPE6E6L",
+      "rank": 84
+    },
+    {
+      "address": "8uFMfjU8XFyTxRYBjRqVkoYB6X9Fs7S1eDQMU8r1qwcz",
+      "amount": 295409576560,
+      "decimals": 9,
+      "owner": "3HE8s46uVsajEdmLb7A3Wm55iLDdzmQN4GooVaX2u7V2",
+      "rank": 85
+    },
+    {
+      "address": "56ViaX3HKT8LxRY7z6WXps31ZvbFmpuK6A1QiemkCwvH",
+      "amount": 292294889771,
+      "decimals": 9,
+      "owner": "3Ddt1GJLd4ceaCcxkf3yzcTQfMtE9xPTbr7Tz5WCAEDd",
+      "rank": 86
+    },
+    {
+      "address": "AxmMuRDkLKd92YYEADbGP1UN2G9QafzQHBGQP4XoKGDj",
+      "amount": 291514067773,
+      "decimals": 9,
+      "owner": "4pk84fPV9WCzquXPwrGmR1USqBBQ6VqJjReRtTmMeGDz",
+      "rank": 87
+    },
+    {
+      "address": "6cWBedZEeX9mBq2ThuwbXgcrCxsPZXUxr5PLYTAerkeH",
+      "amount": 287863116466,
+      "decimals": 9,
+      "owner": "FM55U93AtDFz4EGBK5hVSp8sLyQZKBf6Nbp3xsTCRcPi",
+      "rank": 88
+    },
+    {
+      "address": "BPo4APrnHtJPTuX6TwARqqMKWviZRqMpEKSprBn3kbeU",
+      "amount": 280911885567,
+      "decimals": 9,
+      "owner": "CLLnt4aF49Vq4kRW9Hnrw7JWiYcyW23rHE64so9WvUck",
+      "rank": 89
+    },
+    {
+      "address": "4XDLYc28wwSWfzHG97ZiUVRpsxztvGZSA4aWGoR4VMup",
+      "amount": 266853736702,
+      "decimals": 9,
+      "owner": "BPAwgcGaE3aLdWxux6NT92uZQqWb4DJWnEgFxcEc8Es3",
+      "rank": 90
+    },
+    {
+      "address": "5PCNeuKWQL9NUQyohdr6sdtUAbaWxEvHMwhSFHQ5WG51",
+      "amount": 262358432906,
+      "decimals": 9,
+      "owner": "3hTK1xJ9r4V4icoHJQ6QK9PjdKhY73Rhnkds5xd8rXrB",
+      "rank": 91
+    },
+    {
+      "address": "3wCxbGHhkDGF98SzZHD8WDBetLnKM5vUdFmHiY99sp8q",
+      "amount": 260736516057,
+      "decimals": 9,
+      "owner": "CJ26eXiZbXU7m1BviPu6TrWDSbEKsF5bxoD8reHT7TvE",
+      "rank": 92
+    },
+    {
+      "address": "4PBnJzJcLH7UDK92NsQC1ANQKnyuQ5tihWYiqUD2J71d",
+      "amount": 252538218666,
+      "decimals": 9,
+      "owner": "Gc2nUmFBh2F9cR1tbh47Mrx3dV9ziQgSgTntjPiDwkEz",
+      "rank": 93
+    },
+    {
+      "address": "GNMDo3fTXP9i8sBWLDg7CSvbZeJ6uR4AaQtbcpjE47Pw",
+      "amount": 250351234104,
+      "decimals": 9,
+      "owner": "fwJwTwpzGtZWJrwQZuZm8jaENogTr6BXWoKgCP6QGBE",
+      "rank": 94
+    },
+    {
+      "address": "DBzoMjNNqPX25HbaVNgVi4XwVf2yznJXYahV4dGPQT48",
+      "amount": 244920495764,
+      "decimals": 9,
+      "owner": "2JtKfSF1F2ZCnBb5dP9gS1m8iBu39RvCAzwyUpHK6Jgh",
+      "rank": 95
+    },
+    {
+      "address": "8qutVVzJXDvYQex1roXAgR6tjRFc4xW9n9WzRujQJ17n",
+      "amount": 244853209000,
+      "decimals": 9,
+      "owner": "EPiYww8pGBtBDmN2cSFErveL96jnZ4SjvoWABtVoDYWd",
+      "rank": 96
+    },
+    {
+      "address": "Ee8DHucSKBZd1jzDHXCgMt6rixktCZ6fjfTbousX14N1",
+      "amount": 242229501345,
+      "decimals": 9,
+      "owner": "B62uyPQXkHwi7dzjUSM9mzVTbvK2riCngerSrvaetzPg",
+      "rank": 97
+    },
+    {
+      "address": "AygDMTD5L923tSxfSWgYx8z8Dm1a32gtXcXeWUKt3UHq",
+      "amount": 237184661290,
+      "decimals": 9,
+      "owner": "7Fy3qq5ZS49UpComWNGbfHrnh6fCA2VTAnuxPFX42bpV",
+      "rank": 98
+    },
+    {
+      "address": "4JxJrfn52rHr3VRuUNV44ttXRzZSxW4cCAp24ruv4xZK",
+      "amount": 235921403283,
+      "decimals": 9,
+      "owner": "H2mwGWBQ7Td71k3ua6nK3UCSJbTEo4nrp58qAkT4Zyjw",
+      "rank": 99
+    },
+    {
+      "address": "9t1NXbJfnKcb9KbwcA2yszgcdm17ox2zdrHmD5qZ5iBd",
+      "amount": 235876838444,
+      "decimals": 9,
+      "owner": "8KzrbHiup39X7Zw9grvh7gS9ZcA1zuhLGqgYguSjwnD6",
+      "rank": 100
+    }
+  ],
+  "total": 24991
+}

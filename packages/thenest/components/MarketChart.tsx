@@ -48,7 +48,7 @@ const selectedBrushStyle = {
   stroke: "white",
 };
 
-export type AreaProps = {
+export type MarketChartProps = {
   width: number;
   height: number;
   margin?: { top: number; right: number; bottom: number; left: number };
@@ -69,7 +69,7 @@ export const MarketChart = ({
   margin = { top: 40, right: 100, bottom: 30, left: 100 },
   data = inData,
   transactions = [],
-}: AreaProps) => {
+}: MarketChartProps) => {
   const { showTooltip, hideTooltip, tooltipTop, tooltipLeft, tooltipData } =
     useTooltip<IData>({
       tooltipTop: 0,

@@ -56,6 +56,8 @@ export const AppShell = ({ children, ...props }) => {
         const txChanges = txs.map((tx) => calculateTxChange(tx));
 
         setTransactions(txChanges);
+      } else {
+        setAccount({});
       }
     })();
   }, [connected, connection, publicKey, setAccount, setTransactions]);
